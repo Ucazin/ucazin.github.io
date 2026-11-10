@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudio Canais Lucca</title>
+<meta name="description" content="Estudio Canais Lucca is a personal desktop tool that uploads and schedules the developer's own original animated short videos on the developer's own YouTube channels, using the YouTube Data API.">
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Estudio Canais Lucca</h1>
+    <p class="suave">A personal desktop tool for publishing my own animated short videos on my own YouTube channels.</p>
+    <nav><a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Service</a></nav>
+  </header>
+
+  <h2>What it is</h2>
+  <p>I create original animated short videos (YouTube Shorts) for a small network of YouTube channels that I own and manage
+  from a single Google account. Each series has a Portuguese channel and an English channel.
+  Estudio Canais Lucca is a script that runs only on my own computer and publishes those videos for me through the
+  <a href="https://developers.google.com/youtube/v3">YouTube Data API v3</a>, instead of uploading each one by hand in YouTube Studio.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Lists the channels managed by my Google account, so each video goes to the right channel.</li>
+    <li>Uploads each finished video with its title, description, tags, language and category.</li>
+    <li>Schedules the publish date and time of each video.</li>
+    <li>Adds caption files for the videos and adds each episode to its series playlist.</li>
+  </ul>
+  <p>It does not read, collect or display data from any other YouTube user. It has no website login, no accounts and no server.</p>
+
+  <h2>Who uses it</h2>
+  <p>Only me, the developer, on my own channels. The tool is not offered, sold or distributed to anyone else.</p>
+
+  <h2>Google permissions and why they are needed</h2>
+  <table>
+    <tr><th>Scope</th><th>Used for</th></tr>
+    <tr><td><code>youtube.upload</code></td><td>Uploading my videos and setting their scheduled publish time.</td></tr>
+    <tr><td><code>youtube.force-ssl</code></td><td>Adding captions, updating my videos' details and adding them to my playlists.</td></tr>
+    <tr><td><code>youtube.readonly</code></td><td>Listing my own channels and checking the status of videos the tool uploaded.</td></tr>
+  </table>
+  <p>How data from Google is handled is described in the <a href="privacy.html">Privacy Policy</a>.
+  Estudio Canais Lucca uses YouTube API Services; see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+  and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <footer class="suave">
+    Contact: <a href="https://github.com/Ucazin/ucazin.github.io/issues">open an issue on GitHub</a>.
+    · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
