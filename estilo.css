@@ -13,6 +13,7 @@ p, li { color: var(--texto); }
 a { color: var(--destaque); text-underline-offset: 3px; }
 nav a { margin-right: 18px; white-space: nowrap; }
 code { font-size: .9em; background: var(--linha); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+td code { white-space: nowrap; overflow-wrap: normal; }
 table { width: 100%; border-collapse: collapse; font-size: .95rem; }
 th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--linha); vertical-align: top; }
 footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--linha); }
