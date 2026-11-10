@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Segoe UI, Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3A3833"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="60" y="70" font-size="34" font-weight="700" fill="#1C1B19">Estudio Canais Lucca — architecture</text>
+  <text x="60" y="108" font-size="20" fill="#5E5A53">Personal desktop script. No server, no database, no other users. All Google data stays on the developer's computer.</text>
+
+  <!-- computer -->
+  <rect x="60" y="150" width="640" height="690" rx="18" fill="#F6F3EE" stroke="#C9C2B6" stroke-width="2"/>
+  <text x="90" y="195" font-size="24" font-weight="700" fill="#1C1B19">Developer's own computer (Windows)</text>
+
+  <rect x="100" y="230" width="260" height="120" rx="12" fill="#FFFFFF" stroke="#8A8378" stroke-width="2"/>
+  <text x="120" y="270" font-size="20" font-weight="700" fill="#1C1B19">Finished videos</text>
+  <text x="120" y="300" font-size="17" fill="#5E5A53">original animated Shorts</text>
+  <text x="120" y="324" font-size="17" fill="#5E5A53">(.mp4, created by me)</text>
+
+  <rect x="400" y="230" width="260" height="120" rx="12" fill="#FFFFFF" stroke="#8A8378" stroke-width="2"/>
+  <text x="420" y="270" font-size="20" font-weight="700" fill="#1C1B19">agenda.json</text>
+  <text x="420" y="300" font-size="17" fill="#5E5A53">title, description, tags,</text>
+  <text x="420" y="324" font-size="17" fill="#5E5A53">language, publish time</text>
+
+  <rect x="180" y="420" width="420" height="130" rx="14" fill="#1C1B19"/>
+  <text x="205" y="470" font-size="23" font-weight="700" fill="#FFFFFF">youtube_api.py</text>
+  <text x="205" y="502" font-size="17" fill="#D9D4CB">Python · google-api-python-client</text>
+  <text x="205" y="527" font-size="17" fill="#D9D4CB">commands: authorize · upload · status · revoke</text>
+
+  <rect x="100" y="640" width="260" height="150" rx="12" fill="#FFFFFF" stroke="#B8432F" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="120" y="680" font-size="20" font-weight="700" fill="#1C1B19">OAuth token</text>
+  <text x="120" y="710" font-size="17" fill="#5E5A53">local file, one per channel</text>
+  <text x="120" y="734" font-size="17" fill="#5E5A53">private folder, never in git</text>
+  <text x="120" y="758" font-size="17" fill="#5E5A53">deleted on revoke</text>
+
+  <rect x="400" y="640" width="260" height="150" rx="12" fill="#FFFFFF" stroke="#B8432F" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="420" y="680" font-size="20" font-weight="700" fill="#1C1B19">Uploaded video IDs</text>
+  <text x="420" y="710" font-size="17" fill="#5E5A53">local list, used by "status"</text>
+  <text x="420" y="734" font-size="17" fill="#5E5A53">entries older than 30 days</text>
+  <text x="420" y="758" font-size="17" fill="#5E5A53">removed on every run</text>
+
+  <line x1="230" y1="350" x2="300" y2="418" stroke="#3A3833" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="530" y1="350" x2="460" y2="418" stroke="#3A3833" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="300" y1="552" x2="240" y2="638" stroke="#3A3833" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <line x1="460" y1="552" x2="520" y2="638" stroke="#3A3833" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+
+  <!-- google -->
+  <rect x="900" y="150" width="640" height="690" rx="18" fill="#EEF3F9" stroke="#AFC2D8" stroke-width="2"/>
+  <text x="930" y="195" font-size="24" font-weight="700" fill="#1C1B19">Google</text>
+
+  <rect x="950" y="230" width="540" height="140" rx="12" fill="#FFFFFF" stroke="#6E8BAE" stroke-width="2"/>
+  <text x="975" y="272" font-size="20" font-weight="700" fill="#1C1B19">Google OAuth 2.0 (installed app flow)</text>
+  <text x="975" y="304" font-size="17" fill="#5E5A53">consent screen in the developer's browser</text>
+  <text x="975" y="330" font-size="17" fill="#5E5A53">scopes: youtube.upload · youtube.readonly</text>
+
+  <rect x="950" y="420" width="540" height="170" rx="12" fill="#FFFFFF" stroke="#6E8BAE" stroke-width="2"/>
+  <text x="975" y="462" font-size="20" font-weight="700" fill="#1C1B19">YouTube Data API v3</text>
+  <text x="975" y="494" font-size="17" fill="#5E5A53">channels.list (mine) — confirm the authorized channel</text>
+  <text x="975" y="520" font-size="17" fill="#5E5A53">videos.insert — resumable upload + status.publishAt</text>
+  <text x="975" y="546" font-size="17" fill="#5E5A53">videos.list — status of videos the tool uploaded</text>
+
+  <rect x="950" y="640" width="540" height="150" rx="12" fill="#FFFFFF" stroke="#6E8BAE" stroke-width="2"/>
+  <text x="975" y="682" font-size="20" font-weight="700" fill="#1C1B19">The developer's own YouTube channels</text>
+  <text x="975" y="714" font-size="17" fill="#5E5A53">20 channels on one Google account</text>
+  <text x="975" y="740" font-size="17" fill="#5E5A53">(10 series × Portuguese and English)</text>
+
+  <line x1="602" y1="455" x2="946" y2="310" stroke="#3A3833" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="716" y="300" font-size="16" fill="#3A3833">HTTPS: sign-in,</text><text x="716" y="322" font-size="16" fill="#3A3833">token refresh</text>
+  <line x1="602" y1="505" x2="946" y2="505" stroke="#3A3833" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="716" y="493" font-size="16" fill="#3A3833">HTTPS: API calls</text>
+  <line x1="1220" y1="592" x2="1220" y2="638" stroke="#3A3833" stroke-width="2.5" marker-end="url(#a)"/>
+</svg>

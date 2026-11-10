@@ -23,12 +23,15 @@
 
   <h2>What it does</h2>
   <ul>
-    <li>Lists the channels managed by my Google account, so each video goes to the right channel.</li>
+    <li>Confirms which of my channels was authorized, so each video goes to the right channel.</li>
     <li>Uploads each finished video with its title, description, tags, language and category.</li>
     <li>Schedules the publish date and time of each video.</li>
-    <li>Adds caption files for the videos and adds each episode to its series playlist.</li>
+    <li>Checks each video's processing and scheduling status, and stops if the authorized channel is not the expected one.</li>
   </ul>
   <p>It does not read, collect or display data from any other YouTube user. It has no website login, no accounts and no server.</p>
+
+  <h2>How it works</h2>
+  <p><a href="diagrams/architecture.png">Architecture diagram</a> · <a href="diagrams/user-flow.png">User flow diagram</a></p>
 
   <h2>Who uses it</h2>
   <p>Only me, the developer, on my own channels. The tool is not offered, sold or distributed to anyone else.</p>
@@ -37,8 +40,7 @@
   <table>
     <tr><th>Scope</th><th>Used for</th></tr>
     <tr><td><code>youtube.upload</code></td><td>Uploading my videos and setting their scheduled publish time.</td></tr>
-    <tr><td><code>youtube.force-ssl</code></td><td>Adding captions, updating my videos' details and adding them to my playlists.</td></tr>
-    <tr><td><code>youtube.readonly</code></td><td>Listing my own channels and checking the status of videos the tool uploaded.</td></tr>
+    <tr><td><code>youtube.readonly</code></td><td>Confirming which of my channels is authorized and checking the status of videos the tool uploaded.</td></tr>
   </table>
   <p>How data from Google is handled is described in the <a href="privacy.html">Privacy Policy</a>.
   Estudio Canais Lucca uses YouTube API Services; see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>

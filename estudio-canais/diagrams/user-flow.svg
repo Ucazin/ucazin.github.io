@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Segoe UI, Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3A3833"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="60" y="70" font-size="34" font-weight="700" fill="#1C1B19">Estudio Canais Lucca — user flow</text>
+  <text x="60" y="108" font-size="20" fill="#5E5A53">The only user is the developer, running the script in a terminal on the developer's own computer.</text>
+
+  <g font-size="17" fill="#5E5A53">
+    <!-- row 1 -->
+    <rect x="60" y="160" width="340" height="190" rx="14" fill="#F6F3EE" stroke="#C9C2B6" stroke-width="2"/>
+    <text x="85" y="200" font-size="15" font-weight="700" fill="#B8432F">1 · ONCE PER CHANNEL</text>
+    <text x="85" y="232" font-size="21" font-weight="700" fill="#1C1B19">authorize NN</text>
+    <text x="85" y="264">Script opens the browser</text>
+    <text x="85" y="288">on Google's sign-in page.</text>
+
+    <rect x="450" y="160" width="340" height="190" rx="14" fill="#EEF3F9" stroke="#AFC2D8" stroke-width="2"/>
+    <text x="475" y="200" font-size="15" font-weight="700" fill="#2F5E8F">2 · GOOGLE CONSENT</text>
+    <text x="475" y="232" font-size="21" font-weight="700" fill="#1C1B19">Choose the channel</text>
+    <text x="475" y="264">Approve youtube.upload</text>
+    <text x="475" y="288">and youtube.readonly.</text>
+
+    <rect x="840" y="160" width="340" height="190" rx="14" fill="#F6F3EE" stroke="#C9C2B6" stroke-width="2"/>
+    <text x="865" y="200" font-size="15" font-weight="700" fill="#B8432F">3 · CHECK</text>
+    <text x="865" y="232" font-size="21" font-weight="700" fill="#1C1B19">channels.list (mine)</text>
+    <text x="865" y="264">Wrong channel → token</text>
+    <text x="865" y="288">discarded. Right channel →</text>
+    <text x="865" y="312">token saved locally.</text>
+
+    <rect x="1230" y="160" width="310" height="190" rx="14" fill="#F6F3EE" stroke="#C9C2B6" stroke-width="2"/>
+    <text x="1255" y="200" font-size="15" font-weight="700" fill="#B8432F">4 · EACH BATCH</text>
+    <text x="1255" y="232" font-size="21" font-weight="700" fill="#1C1B19">upload NN [episodes]</text>
+    <text x="1255" y="264">Reads titles, descriptions,</text>
+    <text x="1255" y="288">tags and publish times</text>
+    <text x="1255" y="312">from agenda.json.</text>
+
+    <!-- row 2 -->
+    <rect x="1230" y="440" width="310" height="190" rx="14" fill="#F6F3EE" stroke="#C9C2B6" stroke-width="2"/>
+    <text x="1255" y="480" font-size="15" font-weight="700" fill="#B8432F">5 · SAFETY CHECK</text>
+    <text x="1255" y="512" font-size="21" font-weight="700" fill="#1C1B19">Channel must match</text>
+    <text x="1255" y="544">If the token's channel is not</text>
+    <text x="1255" y="568">the planned one, it stops</text>
+    <text x="1255" y="592">before uploading anything.</text>
+
+    <rect x="840" y="440" width="340" height="190" rx="14" fill="#EEF3F9" stroke="#AFC2D8" stroke-width="2"/>
+    <text x="865" y="480" font-size="15" font-weight="700" fill="#2F5E8F">6 · YOUTUBE DATA API</text>
+    <text x="865" y="512" font-size="21" font-weight="700" fill="#1C1B19">videos.insert</text>
+    <text x="865" y="544">Resumable upload with title,</text>
+    <text x="865" y="568">description, tags, language,</text>
+    <text x="865" y="592">category and publishAt.</text>
+
+    <rect x="450" y="440" width="340" height="190" rx="14" fill="#EEF3F9" stroke="#AFC2D8" stroke-width="2"/>
+    <text x="475" y="480" font-size="15" font-weight="700" fill="#2F5E8F">7 · ON YOUTUBE</text>
+    <text x="475" y="512" font-size="21" font-weight="700" fill="#1C1B19">Scheduled</text>
+    <text x="475" y="544">Private until publishAt,</text>
+    <text x="475" y="568">then public automatically.</text>
+    <text x="475" y="592">Not made for kids.</text>
+
+    <rect x="60" y="440" width="340" height="190" rx="14" fill="#F6F3EE" stroke="#C9C2B6" stroke-width="2"/>
+    <text x="85" y="480" font-size="15" font-weight="700" fill="#B8432F">8 · ANY TIME</text>
+    <text x="85" y="512" font-size="21" font-weight="700" fill="#1C1B19">status NN</text>
+    <text x="85" y="544">videos.list on the IDs this</text>
+    <text x="85" y="568">tool uploaded (kept locally</text>
+    <text x="85" y="592">for at most 30 days).</text>
+
+    <!-- row 3 -->
+    <rect x="60" y="720" width="1480" height="130" rx="14" fill="#FFFFFF" stroke="#B8432F" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="85" y="760" font-size="15" font-weight="700" fill="#B8432F">9 · REVOKE (ANY TIME)</text>
+    <text x="85" y="792" font-size="21" font-weight="700" fill="#1C1B19">revoke NN</text>
+    <text x="290" y="792">revokes the token at Google (oauth2.googleapis.com/revoke) and deletes the local token file.</text>
+    <text x="290" y="820">Access can also be removed at myaccount.google.com/permissions.</text>
+  </g>
+
+  <g stroke="#3A3833" stroke-width="2.5" marker-end="url(#a)">
+    <line x1="402" y1="255" x2="446" y2="255"/>
+    <line x1="792" y1="255" x2="836" y2="255"/>
+    <line x1="1182" y1="255" x2="1226" y2="255"/>
+    <line x1="1385" y1="352" x2="1385" y2="436"/>
+    <line x1="1228" y1="535" x2="1184" y2="535"/>
+    <line x1="838" y1="535" x2="794" y2="535"/>
+    <line x1="448" y1="535" x2="404" y2="535"/>
+  </g>
+</svg>
